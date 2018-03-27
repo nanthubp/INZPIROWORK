@@ -1,0 +1,36 @@
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (master)
+$ git branch menubranch
+
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (master)
+$ git checkout menubranch
+Switched to branch 'menubranch'
+
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (menubranch)
+$ git add -A
+
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (menubranch)
+$ git commit -a -m "work given by hari"
+[menubranch e43ff35] work given by hari
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Celebrate the Food.pdf
+
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (menubranch)
+$ ls
+'Celebrate the Food.pdf'   INZPIRO.docx   README.md   REPORT.docx
+
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (menubranch)
+$ git checkout master
+Switched to branch 'master'
+
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (master)
+$ ls
+INZPIRO.docx  README.md  REPORT.docx
+
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (master)
+$ git rebase menubranch
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to menubranch.
+
+WELCOME@WELCOME-PC MINGW32 /c/INZPIROWORK (master)
+$ ls
+'Celebrate the Food.pdf'   INZPIRO.docx   README.md   REPORt.docx
